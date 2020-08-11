@@ -16,7 +16,7 @@ $lvlb=$_POST[("bres")];
 $lvlc=$_POST[("cres")];
 $mail="you@edu.salford.ac.uk";
 
-echo "<p>Thanks ".$name."</p><p>Your results have been sent to Fernando</p><p>Slider A ".$lvla."</p><p>Slider B ".$lvlb."</p><p>Slider C ".$lvlc."</p>";
+echo "<p>Thanks ".$name."</p><p>Your results have been sent to Your Name</p><p>Slider A ".$lvla."</p><p>Slider B ".$lvlb."</p><p>Slider C ".$lvlc."</p>";
 
 mail($mail,"Audio Test Results",$name." ".$lvla." ".$lvlb." ".$lvlc);
 ?>
