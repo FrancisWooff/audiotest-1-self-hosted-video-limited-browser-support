@@ -16,12 +16,12 @@ $lvlb=$_POST[("bres")];
 $lvlc=$_POST[("cres")];
 $mail="you@edu.salford.ac.uk";
 
-echo "<p>Thanks ".$name."</p><p>Your results have been sent to Fernando</p><p>Slider A ".$lvla."</p><p>Slider B ".$lvlb."</p><p>Slider C ".$lvlc."</p>";
+echo "<p>Thanks ".$name."</p><p>Your results have been sent to name</p><p>Slider A ".$lvla."</p><p>Slider B ".$lvlb."</p><p>Slider C ".$lvlc."</p>";
 
-mail($mail,"Audio Test Results",$name." ".$lvla." ".$lvlb." ".$lvlc);
+mail($mail,"Audio Test Results p1",$name." ".$lvla." ".$lvlb." ".$lvlc);
 ?>
 
-<a href="index.html">Back to the test</a>
+<a href="page2.html">Next</a>
 
 </main>
 </body>

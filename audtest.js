@@ -1,13 +1,20 @@
 function abut() {
     video.audioTracks[0].enabled = true;
     video.audioTracks[1].enabled = false;
+    video.audioTracks[2].enabled = false;
+    
 }
 function bbut() {
     video.audioTracks[0].enabled = false;
     video.audioTracks[1].enabled = true;
+    video.audioTracks[2].enabled = false;
+    
 }
 function cbut() {
-    alert("You pressed button C");
+    video.audioTracks[0].enabled = false;
+    video.audioTracks[1].enabled = false;
+    video.audioTracks[2].enabled = true;
+    
 }
 
 var slida = document.getElementById("aslid");
