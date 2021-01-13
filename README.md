@@ -1,6 +1,8 @@
 # audiotest VERSION 1 WITH LIMITED BROWSER SUPPORT
 Template for University of Salford MSc Audio Production students to adapt to host comparative audio tests online
 
+13/1/21 some further updating - including improved javascript. However broswr support of html <video> audioTracks seems to be receding, rather than increasing. W3 Schools table now shows "no support" for all broswers except "old" Edge v11. Tested as working in new Edge (v87) with developer flag enabled.
+
 01/09/2020 this project is now unlikely to be developed further, a new project audiotest-2, which uses an embedded video player (the content for which is hosted elsewhere), seems to offer more flexibility of video file formats that can be uploaded & better browser compatibility (looking compatible with all modern browsers)
 
 If you do still choose to use this template the following additional actions are required as a minimum:
