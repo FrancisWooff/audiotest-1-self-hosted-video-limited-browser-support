@@ -1,43 +1,47 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Audio test template</title>
+<title>Audio test</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="audtest.css">
+<script src="audtest.js" defer></script>
 </head>
 <body>
 <main>
 <h1>Audio test template</h1>
 
-<video  id="video" src="output2.mov" type="video/quicktime" controls loop></video>
+<video src="output2.mov" type="video/quicktime" controls loop></video>
 
-<div class=panel>
-    <div class=channel>
-        <input type="range" min="1" max="100" value="50" class="slider" id="aslid">
-        <button onclick="abut()">A</button>
+<div class="panel">
+    <div class="channel">
+        <input type="range" min="1" max="100" value="50" orient="vertical">
+        <button>A</button>
     </div>
-    <div class=channel>
-        <input type="range" min="1" max="100" value="50" class="slider" id="bslid">
-        <button onclick="bbut()">B</button>
+    <div class="channel">
+        <input type="range" min="1" max="100" value="50" orient="vertical">
+        <button>B</button>
     </div>
-    <div class=channel>
-        <input type="range" min="1" max="100" value="50" class="slider" id="cslid">
-        <button onclick="cbut()">C</button>
+    <div class="channel">
+        <input type="range" min="1" max="100" value="50" orient="vertical">
+        <button>C</button>
     </div>
 </div>
-
+<!--
+For each additional channel needed copy one of the "channel" divs above (4 lines beginning "<div class="channel) & paste it below the 3 already in place. Edit the identifying letter(s) in between the <button> tag(s).
+Then perform similar with label+input element pairs in the form below (you will need to increment the "name" as well as the slider letter).
+Then make appropriate matching changes to the relevant php page.
+-->
 <form action="results2mail.php" method="post">
-    <p>Hi there username it's</p>
+    <p>Hi there <!--you could insert your name--> it's</p>
     <input type="text" name="name"><label>(full name)</label>
-    <p>Here are my results for page 1:</p> 
-    <label>Slider A </label><input id="la" type="number" name="ares"><br>
-    <label>Slider B </label><input id="lb" type="number" name="bres"><br>
-    <label>Slider C </label><input id="lc" type="number" name="cres"><br>
+    <p>Here are my results:</p> 
+    <label>Slider A </label><input type="number" name="ares"><br>
+    <label>Slider B </label><input type="number" name="bres"><br>
+    <label>Slider C </label><input type="number" name="cres"><br>
     <input type="submit" value="Submit">
 </form>
 
 </main>
-<script src="audtest.js"></script>
 </body>
 </html>
